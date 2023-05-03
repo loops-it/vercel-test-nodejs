@@ -1,7 +1,7 @@
 
 const express = require("express");
-const homepageController = require("../controllers/homepageController.js");
-const chatBotController = require("../controllers/chatBotController.js");
+const homepageController = require("/controllers/homepageController.js");
+const chatBotController = require("/controllers/chatBotController.js");
 const ejs = require('ejs');
 
 let router = express.Router();

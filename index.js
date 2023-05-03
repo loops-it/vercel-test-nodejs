@@ -1,8 +1,8 @@
 // Import packages
 require("dotenv").config();
 const express = require("express");
-const viewEngine = require("./config/viewEngine.js");
-const initWebRoute = require("./routes/web.js");
+const viewEngine = require("/config/viewEngine.js");
+const initWebRoute = require("/routes/web.js");
 const bodyParser = require("body-parser");
 const ejs = require('ejs');
 
