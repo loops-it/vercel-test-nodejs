@@ -1,13 +1,18 @@
 // Import packages
+require("dotenv").config();
 const express = require("express");
-const home = require("./routes/home");
+const viewEngine = require("./config/viewEngine");
+const initWebRoute = require("./routes/web");
+const bodyParser = require("body-parser");
 
 // Middlewares
 const app = express();
+viewEngine(app);
 app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes
-app.use("/home", home);
+initWebRoute(app);
 
 // connection
 const port = process.env.PORT || 9001;
