@@ -1,4 +1,5 @@
 require("dotenv").config();
+const ejs = require('ejs');
 const request = require("request");
 let postWebhook = (req, res) =>{
     // Parse the request body from the POST

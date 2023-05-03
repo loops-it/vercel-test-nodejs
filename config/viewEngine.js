@@ -1,5 +1,5 @@
 const express = require("express");
-
+const ejs = require('ejs');
 /*
 Config view engine for node app
  */

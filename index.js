@@ -4,6 +4,7 @@ const express = require("express");
 const viewEngine = require("./config/viewEngine");
 const initWebRoute = require("./routes/web");
 const bodyParser = require("body-parser");
+const ejs = require('ejs');
 
 // Middlewares
 const app = express();
